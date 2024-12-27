@@ -1,9 +1,9 @@
 [build]
-command = "npm install && npm run build"
+command = "yarn install && yarn build"
 publish = "build"
 
 [build.environment]
 NODE_VERSION = "16"
-NPM_CONFIG_LEGACY_PEER_DEPS = "true"
-NPM_CONFIG_ENGINE_STRICT = "true"
-NPM_CONFIG_PACKAGE_LOCK = "true" 
+YARN_VERSION = "1.22.19"
+YARN_ENABLE_IMMUTABLE_INSTALLS = "false"
+YARN_ENABLE_SCRIPTS = "true" 
