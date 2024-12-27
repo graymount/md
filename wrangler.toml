@@ -1,6 +1,8 @@
 [build]
-command = "yarn install && yarn build"
+command = "export NODE_OPTIONS=--openssl-legacy-provider && npm install --legacy-peer-deps && npm run build"
 publish = "build"
 
 [build.environment]
-NODE_VERSION = "18" 
+NODE_VERSION = "16"
+NPM_FLAGS = "--legacy-peer-deps"
+NODE_OPTIONS = "--openssl-legacy-provider" 
